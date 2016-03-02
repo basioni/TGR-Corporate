@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Togareya Corporate</title>
@@ -18,16 +18,41 @@ $(document).ready(function(){
  
   
   $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
     $(".slidestart").each(function(){
       var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
         }
     });
+  
+    if (winTop > 110) {
+        $(".navbar-default").css("background-color","rgba(0,0,0,0.5)");
+//        $(".welcome-flat  .navbar-brand img").css("height","50%");
+//        $(".welcome-flat  .navbar-brand img").css("width","50%");
+        $(".navbar").css("height","80px");
+    } else{
+        $(".navbar-default").css("background-color","transparent");
+        $(".navbar").css("height","120px");
+//        $(".welcome-flat  .navbar-brand img").css("height","100%");
+//        $(".welcome-flat  .navbar-brand img").css("width","100%");
+//        
+    }
+      
+      
   });
-})
+});
+$(window).load(function(){
+     // Loading Elements
+    $(".loading-overlay .sk-cube-grid").fadeOut(2000,function(){
+        // Show scroll  
+        $("body").css("overflow","auto");
+        $(this).parent().fadeOut(1000,function(){ 
+            $(this).remove();
+        });
+    }); 
+}); 
 </script>
 
 	</head>
@@ -37,87 +62,62 @@ $(document).ready(function(){
 		================================================== -->
 		
 		<!-- Flat Container Main Block-->
-		<div class="container-fluid welcome-flat">
-			<div class="row" >
-				<div class="col-sm-6 col-md-8 col-lg-7">
-					<!-- Main -->
-					<div  class="main-intro" >
-					
-						<!-- Replace Your website Link with # -->
-						<a href="#" title="Togaria Corporate">
-						<!-- Replace Your Logo Image-->
-						<img class="img-responsive" src="assets/images/logo.png" alt="Togareya Corporate" />
-						</a>
-						
-						<h1>Togareya Corporate</h1>
-						
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							
-							<!-- Welcome Flat Block slides -->
-							<div class="carousel-inner" role="listbox">
-							
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item active">
-									<h2>Ready Quotes for using!</h2>
-									<p> Sample welcome text!</p>
-								</div>
+		<div class="welcome-flat container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="#">
+                        <img id="brand-image" src="assets/images/logo.png" alt="Togareya Corporate" />
+                    </a>
+                  </div><!-- navbar-header -->
+                  <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="#myCarousel">Home</a></li>
+                      <li><a href="#">Mission</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Staff</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                    </ul>        
+                  </div><!-- collapse navbar-collapse -->
+              
+          </nav>
+        	<div id="myCarousel" class="carousel slide text-center"  data-ride="carousel" >			
+                <!-- Welcome Flat Block slides -->
+                <div class="carousel-inner" role="listbox">
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Togareya is your best choice</h2>
-									<p> Sample welcome text!</p>
-								</div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item active">
+                        <h2>Ready Quotes for using!</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Business Landing Page</h2>
-									<p> Sample welcome text!</p>
-								</div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item">
+                        <h2>Togareya is your best choice</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Business Landing Page</h2>
-									<p> Sample welcome text!</p>
-								</div>
-						  </div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item">
+                        <h2>Business Landing Page</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4">
-				
-					<!-- Flat Main Form Section-->
-					<div class="flat-form">
-						<h3>CONTACT US NOW!</h3>
-						
-						<!-- Flat Main Form elements-->
-						<form role="form">
-							<div class="form-group" >
-								<input type="text" class="form-control" id="usr" placeholder="First Name" />
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="usrlast" placeholder="Last Name" />
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Email Address" />
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="phone" placeholder="Phone" />
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-block" value="SUBMIT" />
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
+              </div>
+            </div>
 		</div>
 		<!-- end of welcome flat container
 		================================================== -->
 		
 		<!-- start of large icons Block
 		================================================== -->
-		<div class="container large-icons ">	
+		<div class="container large-icons " id="large-icon">	
 			<div class="row">
 				
 				<!-- large icon Item !-->
@@ -158,7 +158,7 @@ $(document).ready(function(){
 
 		<!-- start of Features Block
 		================================================== -->
-		<div class="container-fluid features-section" >
+		<div class="container-fluid features-section" id="features">
 			<div class="row">
 				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8" >
 				
@@ -191,7 +191,7 @@ $(document).ready(function(){
 		
 		<!-- Start of Services section
 		================================================== -->
-		<div class="container-fluid services-container">
+		<div class="container-fluid services-container" id="service">
 			<div class="row services-heading">
 				<h2>Our Featured Main Service</h2>
 				<h3>
@@ -287,7 +287,7 @@ $(document).ready(function(){
 		
 		<!-- start of small call to action section 
 		================================================== -->
-		<div class="container-fluid sm-CLA-section">
+		<div class="container-fluid sm-CLA-section" id="cla">
 			<div class="row slidestart" >
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 					<div class="jumbotron">
@@ -302,7 +302,7 @@ $(document).ready(function(){
 		
 		<!-- start of Projects section
 		================================================== -->
-		<div class="container-fluid projects-container" >
+		<div class="container-fluid projects-container" id="projects">
 			<div class="row pricing-heading">
 				<h2>Our Featured Projects</h2>
 				<h3>
@@ -350,7 +350,7 @@ $(document).ready(function(){
 		
 		<!-- start of Summaries section
 		================================================== -->
-		<div class="container-fluid summaries-section">	
+		<div class="container-fluid summaries-section" id="summaries">	
 			<div class="row slidestart">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
 					<div class="summary-number">
@@ -386,7 +386,7 @@ $(document).ready(function(){
 		
 		<!-- start of pricing section
 		================================================== -->
-		<div class="container pricing-section" >
+		<div class="container pricing-section" id="pricing">
 				<div class="row pricing-heading slidestart">
 				<h2>Our Pricing</h2>
 				<h3>
@@ -457,10 +457,41 @@ $(document).ready(function(){
 		<!-- end of pricing section
 		================================================== -->
 
-		
+		<!-- Start Contact Us Section-->
+       <section class="contact-us text-center">
+            <div class="container ">
+                <div class="row">
+                    <i class="fa fa-headphones fa-4x"></i>
+                    <h1>Tell Us What You Feel</h1>
+                    <p class="lead">Omnis commodo consequat ei mea. Movet praesent postulant mea at, at nam dolorem lucilius.Omnis commodo at consequat ei mea. Movet praesent nampostulant mea at</p>
+                    <!-- Start Contact Form-->
+                    <form role="form">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control input-lg" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-lg" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-lg" placeholder="Cell Phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="form-group">
+                                <textarea class="form-control input-lg" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-info btn-lg btn-block">Contact Us</button>
+                        </div>
+                   </form>
+                </div>
+                    <!-- End Contact Form-->
+            </div>
+       </section>
+        <!-- End Contact Us Section-->
 		<!-- start of Testimonials section
 		================================================== -->
-		<div class="container-fluid testimonial-section">
+		<div class="container-fluid testimonial-section" id="testimonial">
 			<div class="row" >
 				<h2>Our Clients</h2>
 				<h3>
@@ -545,7 +576,7 @@ $(document).ready(function(){
 		
 		<!-- start of footer section
 		================================================== -->
-		<div class="container-fluid footer-container">
+		<div class="container-fluid footer-container" >
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
 					<p>
@@ -586,6 +617,25 @@ $(document).ready(function(){
 		</div>    
 		<!-- end of footer section
 		================================================== -->
+        <!--Start Loading Section
+        ================================================== -->
+        <section class="loading-overlay">
+            <div class="sk-cube-grid">
+              <div class="sk-cube sk-cube1"></div>
+              <div class="sk-cube sk-cube2"></div>
+              <div class="sk-cube sk-cube3"></div>
+              <div class="sk-cube sk-cube4"></div>
+              <div class="sk-cube sk-cube5"></div>
+              <div class="sk-cube sk-cube6"></div>
+              <div class="sk-cube sk-cube7"></div>
+              <div class="sk-cube sk-cube8"></div>
+              <div class="sk-cube sk-cube9"></div>
+            </div>
+        </section>
+    
+        <!--End Loading Section
+        ================================================== -->
+        <!--End Loading Section-->
 
 </body>
 </html>
