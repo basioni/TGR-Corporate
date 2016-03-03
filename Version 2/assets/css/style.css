@@ -1,0 +1,622 @@
+
+/**
+Importing Google Fonts
+**/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+body{
+min-width: 250px;
+font-family: Tahoma, Geneva, sans-serif;
+overflow: hidden;
+}
+h1,h2,a{
+font-family: 'Montserrat', san-serif;
+}
+h3,h4,h5,h6{
+font-family: 'Montserrat', san-serif;
+}
+
+.btn-primary {
+color: #fff;
+background: #0cb4ce;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.welcome-flat{
+background:url('../images/togareya-corporate-background.jpg') ;
+background-size: cover;
+min-height: 500px;
+}
+
+.main-intro{
+padding: 50px;
+color: #fff;
+text-shadow: 1px 0 #333, 0 1px #333, 1px 0 #333, 0 1px #333;
+}
+
+.carousel-inner h2{
+font-size: 22px;
+font-weight: bolder;
+}
+.carousel-inner p{
+font-size: 18px;
+}
+
+/* NavBar CSS Attributes
+==================================================*/ 
+
+.welcome-flat .navbar {
+transition: all .5s ease-out; 
+/*max-height: 120px;*/
+height: 120px;
+width: auto;
+}
+
+.welcome-flat .navbar-default {
+background-color: transparent;
+background-size: cover;
+border: none;
+}
+.welcome-flat .navbar-default .navbar-nav a {
+color: white;
+padding: 10px 8px;
+}
+
+.welcome-flat .navbar-default .navbar-nav a:hover {
+color: #EEC856;
+}
+
+.welcome-flat .navbar-default .navbar-nav .active a {
+font-weight: 700;
+color: #0cb4ce;
+background: transparent;
+border-bottom: 4px solid #0cb4ce;
+text-shadow: none;
+}
+
+.welcome-flat .navbar-default .navbar-nav .active a:hover {
+color: #EEC856;
+background: transparent;
+text-shadow: none;
+}
+.welcome-flat .navbar .navbar-header .navbar-toggle {
+margin-top: 30px;
+
+}
+
+.welcome-flat .navbar .nav > li  {
+margin-top: 30px;
+font-size: 18px;
+}
+.welcome-flat .navbar .nav > li:last-child{
+margin-right: 50px;
+
+} 
+.welcome-flat .navbar .nav > li > a{
+line-height: 7px;
+
+}
+.welcome-flat .navbar-header{
+    height: 100%;
+    width:auto;
+}
+.welcome-flat  .navbar-brand{
+   height: 100%;
+   width: 60%;
+}
+
+.welcome-flat  .navbar-brand img{
+ height: 100%;
+ width: auto;
+}
+
+.welcome-flat .slide{
+padding-top: 200px;
+color: #FFF;
+}
+
+/* 
+==================================================*/ 
+/* Welcome flat form CSS attributes 
+==================================================*/ 
+/* Flat form welcome Container styles */
+.flat-form{
+text-align: center;
+padding: 50px 10px 30px 10px;
+width: 80%;
+background-color:rgba(0, 0, 0, 0.9);
+height: 400px;
+margin: auto;
+}
+
+/* FLat form box heading style */
+.flat-form h3{
+color: #fff;
+font-size: 20px;
+}
+/* Flat Form style */
+.flat-form form{
+padding: 20px;
+}
+
+.flat-form form .btn{
+background: #0cb4ce;
+}
+
+.flat-form input:focus{
+background: #0cb4ce;
+}
+
+/**large icons section CSS styles 
+==================================================*/ 
+
+/* large icons container */
+.large-icons{
+margin-top: 40px;
+width: 100%;
+min-height: 300px;
+padding: 30px;
+text-align: center;
+}
+
+/* large icons item style */
+.lg-icon-item{
+height: 150px;
+width: 150px;
+text-align: center;
+font-size: 3.0em;
+background:#000;
+color:#fff;
+margin: auto;
+padding: 45px;
+animation-name: icons-appear;
+animation-duration: 1s;
+border-radius: 75px;
+}
+
+/* large icons item Mouse Over style */
+.lg-icon-item:hover {
+height: 160px;
+width: 160px;
+text-align: center;
+font-size: 3.1em;
+background: #0cb4ce;
+color:#fff;
+margin: auto;
+padding: 50px;
+border-radius: 85px;
+cursor: pointer;
+}
+/*** Features Block Styles 
+==================================================*/ 
+
+/* Features Container*/ 
+.features-section{
+min-height: 400px;
+background: #f2f2f2;
+}
+/* Features content */
+.features-content{
+padding: 20px;
+}
+
+
+/**** Features Content inner paragraphs *****/
+.features-content p{
+border-left:4px solid;
+padding-left:10px;
+margin-left:30px;
+}
+.features-content div{
+margin-left:30px;
+}
+.features-content .features-actions a{
+margin: 5px ;
+}
+
+.features-image img{
+margin: auto;
+width: 100%;
+height: 100%;
+}
+
+/*** Services Block 
+==================================================*/ 
+.services-container{
+margin-top: 30px;
+min-height:680px;
+text-align: center;
+}
+
+.services-heading{
+margin-bottom: 30px;
+text-align: center;
+}
+.services-icon span{
+cursor: pointer;
+font-size: 3.5em;
+padding: 10px;
+}
+.services-icon span:hover{
+color: #0cb4ce;
+}
+
+/*** Small Call-To-Action section styles 
+==================================================*/ 
+.sm-CLA-section{
+min-height: 300px;
+background:url('../images/small-call-to-action.jpg') fixed;
+background-size: cover;
+color: #fff;
+padding: 50px;
+margin-bottom: 50px;
+}
+
+
+.sm-CLA-section .jumbotron{
+background: none;
+text-align: center;
+min-height: 300px;
+vertical-align: middle;
+padding-top: 100px;
+}
+
+.sm-CLA-section .jumbotron h2{
+margin-bottom: 20px;
+}
+
+
+/**** Projects Block Styles 
+==================================================*/ 
+.projects-container{
+min-height:800px;
+text-align: center;
+}
+
+.projects-container h3{
+margin-bottom: 30px;
+}
+
+.projects-container img{
+width: 250px;
+height: 250px;
+margin: auto;
+}
+/**** Quick  Summaries Block 
+==================================================*/ 
+.summaries-section{
+background: url('../images/summaries-background.jpg') fixed;
+background-size: cover;
+min-height: 200px;
+padding-top: 50px;
+text-align: center;
+color: #fff;
+}
+
+.summary-number{
+font-size: 4.0em;
+}
+
+/*** Pricing Section 
+==================================================*/ 
+.pricing-section{
+padding: 50px;
+margin-top: 20px;
+}
+.pricing-heading{
+margin-bottom: 30px;
+text-align: center;
+}
+
+.pricing-section .table> tbody > tr > td{
+width: 90%;
+vertical-align: middle;
+font-size: 18px;
+cursor: pointer;
+}
+
+.pricing-section .table> tbody > tr > td:hover{
+background: #0cb4ce;
+color: #fff;
+}
+.pricing-section .table-blue{
+background: #0cb4ce;
+color: #fff;
+}
+
+.pricing-section .table-blue> tbody > tr > td:hover{
+background: #337ab7;
+}
+
+.pricing-section .table tr, .pricing-section .table th{
+height: 70px;
+text-align: center;
+vertical-align: middle;
+}
+.pricing-section .table th{
+font-size: 18px;
+cursor: pointer;
+}
+.pricing-section .table .price td{
+font-family: 'Montserrat', san-serif;
+height: 130px;
+font-size: 56px;
+text-align: center;
+font-weight: bold;
+}
+
+.pricing-section  .table td{
+vertical-align: middle;
+}
+
+.pricing-section .table a{
+border: 2px solid;
+border-radius: 10px;
+padding: 15px;
+margin: auto; 
+text-decoration: none;
+}
+
+.pricing-section .table-blue a{
+color: #fff;
+}
+
+/**** Start of Contact Us styles 
+==================================================*/
+.contact-us .lead{ margin-bottom: 40px;}
+
+.contact-us  textarea.form-control{
+     height: 108px;
+}
+
+/**** End of Contact Us styles 
+==================================================*/
+
+/**** Start of testimonials styles 
+==================================================*/ 
+
+.testimonial-section{
+background:#f2f2f2;
+background-size: cover;
+width: 100%;
+padding: 60px;
+text-align: center;
+min-height: 400px;
+}
+
+.testimonial-section h4{
+color: #0cb4ce;
+}
+
+.testimonial-section .carousel-indicators li{
+    border:2px solid #337ab7;
+}
+.testimonial-section .carousel-indicators .active{
+background-color: #337ab7;
+}
+.testimonials-inner
+{
+width: 70%;
+margin: auto;
+}
+
+.testimonial-item{
+min-height: 450px;
+margin: auto;
+padding-top: 20px;
+text-align: center;
+}
+
+.testimonial-item img{
+border: 3px solid;
+border-radius: 100px;
+width: 200px;
+height: 200px;
+}
+
+
+
+
+/**** Call To Action Section CSS atributes ***/
+.CLA-section{
+min-height: 600px;
+background:url('../images/call-to-action-background.jpg') ; /* Replace your Background Image Here */
+background-size: cover;
+color: #fff;
+padding: 50px;
+}
+
+
+/*** Footer Section Styles *******/
+.footer-container{
+background:#333333;
+color: #fff;
+min-height:260px;
+padding: 40px 0px 0px 0px;
+}
+
+.footer-container .social-icons{
+display: inline;
+margin-top: 5px;
+}
+
+.footer-container .form-inline{
+min-height: 50px;
+margin-top: 10px;
+margin-bottom: 20px;
+width: 100%;
+font-size: 17px;
+text-align: center;
+}
+.footer-container .form-group {
+min-height: 50px;
+margin: 10px 20px 10px 20px;
+width: 90%;
+font-size: 17px;
+text-align: center;
+}
+
+.footer-container .form-group .form-control{
+width: 70%;
+}
+.footer-container .form-group input , .form-inline .btn{
+min-height: 50px;
+margin-top: 10px;
+font-size: 17px;
+}
+
+.footer-container p{
+font-family: 'Montserrat', serif;
+font-size: 14px;
+margin: 0px;
+}
+
+.footer-container .subscribe-txt{
+font-family: 'Montserrat', serif;
+font-size: 14px;
+padding: 0px 10px 0px 10px;
+text-align: center;
+}
+
+
+.footer-container .glyphicon{
+font-size: 1.4em;
+
+}
+
+.footer-container .copyrights{
+height: 60px;
+background: #000;
+padding: 20px 0px 20px 0px;
+text-align: center;
+}
+
+
+/*  Animations And Effects*/ 
+.slidestart {visibility:hidden;}
+
+.slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+      visibility: visible;			
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(80%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(80%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+/* Start Loading Section */
+.loading-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: #222;
+    left: 0;
+    top: 0;
+}
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 300px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #FFF;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  -o-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  -moz-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    -moz-transform: scale3D(1, 1, 1); 
+    -o-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    -moz-transform: scale3D(0, 0, 1); 
+    -o-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+
+
+/* End Loading Section */
+
