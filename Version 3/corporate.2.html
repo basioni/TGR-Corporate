@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Togareya Corporate</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/style.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+		
+		<!-- Bootstrap core JS -->
+		<!-- <script src="assets/js/bootstrap.min.js"></script> !-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+<script>
+            $(document).ready(function(){
+                $(window).scroll(function() {
+                var winTop = $(window).scrollTop();
+                    $(".slidestart").each(function(){
+                        var pos = $(this).offset().top;
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+
+                    if (winTop > 110) {
+                        $(".navbar-default").css("background-color","rgba(0,0,0,0.5)");
+                //        $(".welcome-flat  .navbar-brand img").css("height","50%");
+                //        $(".welcome-flat  .navbar-brand img").css("width","50%");
+                        $(".navbar").css("height","80px");
+                    } else{
+                        $(".navbar-default").css("background-color","transparent");
+                        $(".navbar").css("height","120px");
+                //        $(".welcome-flat  .navbar-brand img").css("height","100%");
+                //        $(".welcome-flat  .navbar-brand img").css("width","100%");
+                //        
+                    }
+                });
+            });
+            $(window).load(function(){
+                 // Loading Elements
+                $(".loading-overlay .load-cube-grid").fadeOut(2000,function(){
+                    // Show scroll  
+                    $("body").css("overflow","auto");
+                    $(this).parent().fadeOut(1000,function(){ 
+                        $(this).remove();
+                    });
+                }); 
+            }); 
+        </script>
+
+	</head>
+
+	<body>
+		<!-- Start Welcome flat container
+		================================================== -->
+		
+		<!-- Flat Container Main Block-->
+		<div class="container-fluid welcome-flat">
+			<div class="row" >
+				<div class="col-sm-6 col-md-8 col-lg-7">
+					<!-- Main -->
+					<div  class="main-intro" >
+						<!-- Replace Your website Link with # -->
+						<a href="#" title="Togaria Corporate">
+						<!-- Replace Your Logo Image-->
+						<img class="img-responsive" src="assets/images/logo.png" alt="Togareya Corporate" />
+						</a>
+						
+						<h1>Togareya Corporate</h1>
+						
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							
+							<!-- Welcome Flat Block slides -->
+							<div class="carousel-inner" role="listbox">
+							
+								<!-- Welcome Flat Block slide Item -->
+								<div class="item active">
+									<h2>Ready Quotes for using!</h2>
+									<p> Sample welcome text!</p>
+								</div>
+
+								<!-- Welcome Flat Block slide Item -->
+								<div class="item">
+									<h2>Togareya is your best choice</h2>
+									<p> Sample welcome text!</p>
+								</div>
+
+								<!-- Welcome Flat Block slide Item -->
+								<div class="item">
+									<h2>Business Landing Page</h2>
+									<p> Sample welcome text!</p>
+								</div>
+
+								<!-- Welcome Flat Block slide Item -->
+								<div class="item">
+									<h2>Business Landing Page</h2>
+									<p> Sample welcome text!</p>
+								</div>
+						  </div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4">
+				
+					<!-- Flat Main Form Section-->
+					<div class="flat-form">
+						<h3>CONTACT US NOW!</h3>
+						
+						<!-- Flat Main Form elements-->
+						<form role="form">
+							<div class="form-group" >
+								<input type="text" class="form-control" id="usr" placeholder="First Name" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="usrlast" placeholder="Last Name" />
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" placeholder="Email Address" />
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="phone" placeholder="Phone" />
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-primary btn-block" value="SUBMIT" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of welcome flat container
+		================================================== -->
+		
+		<!-- start of large icons Block
+		================================================== -->
+		<div class="container large-icons ">	
+			<div class="row">
+				
+				<!-- large icon Item !-->
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="lg-icon-item ">
+						<span class="glyphicon glyphicon-list"></span>
+					</div>
+					<h4>Planning</h4>
+				</div>
+	
+				<!-- large icon Item !-->
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="lg-icon-item">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</div>
+					<h4>Fast Delivering</h4>
+				</div>
+	
+				<!-- large icon Item !-->
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="lg-icon-item">
+						<span class="glyphicon glyphicon-cloud-download"></span>
+					</div>
+					<h4>Live Support</h4>
+				</div>
+
+				<!-- large icon Item !-->
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="lg-icon-item">
+						<span class="glyphicon glyphicon-flag"></span>
+					</div>
+					<h4>Support</h4>
+				</div>
+			</div> 
+		</div>  
+		<!--==============================================
+			end of Large Icons Block -->
+
+		<!-- start of Features Block
+		================================================== -->
+		<div class="container-fluid features-section" >
+			<div class="row">
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8" >
+				
+					<!-- Features block text !-->
+					<div class="features-content slidestart">
+						<h2>Services you will love & enjoy.</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris. Vivamus sed tincidunt enim. per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div ><span class="glyphicon glyphicon-ok"></span> Feature 1</div>
+							<div><span class="glyphicon glyphicon-ok"></span> Feature 2</div>
+							<div><span class="glyphicon glyphicon-ok"></span> Feature 3</div>
+							<div><span class="glyphicon glyphicon-ok"></span> Feature 4</div>
+							<div><span class="glyphicon glyphicon-ok"></span> Feature 5</div>
+					
+						<div class="features-actions">
+							<a class="btn btn-primary btn-lg" href="#">BUY NOW</a> <!-- Replace Your Action URL Here!-->
+							<a class="btn btn-default btn-lg" href="#">LEARN MORE</a> <!-- Replace Your Action URL Here!-->
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4" >
+					<!-- Features Block Image !-->
+					<div class="features-image">
+						<img class="img-responsive" src="assets/images/Section-1-image.jpg" alt="Beautiful Features" /> <!-- Replace Your Action URL Here!-->
+					</div>
+				</div>
+			</div>  
+		</div>    
+		<!-- End of Features section
+		================================================== -->
+		
+		<!-- Start of Services section
+		================================================== -->
+		<div class="container-fluid services-container">
+			<div class="row title-bar">
+				<h2>Our Featured Main Service</h2>
+				<h3>
+					Everything that matters to your success
+				</h3>
+				<p>Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt</p>
+			</div>
+			<div class="row slidestart">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 1 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-list"></span>
+						<h3>CREATIVE DESIGN</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 2 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-phone-alt"></span>
+						<h3>FULLY RESPONSIVE</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 3 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-gift"></span>
+						<h3>CUSTOM SHORTCODES</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 4 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-screenshot"></span>
+						<h3>SEO OPTIMIZED</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 5 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-list-alt"></span>
+						<h3>CREATIVE DESIGN</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 6 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-file"></span>
+						<h3>FULLY RESPONSIVE</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 7 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-cog"></span>
+						<h3>CUSTOM SHORTCODES</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" >
+					<!-- Services 8 Block !-->
+					<div class="services-icon">
+						<span class="glyphicon glyphicon-cloud"></span>
+						<h3>SEO OPTIMIZED</h3>
+						<p>
+							Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt
+						</p>
+					</div>
+				</div>
+			</div>  
+		</div>    
+		<!-- End of Services section
+		================================================== -->
+		
+		<!-- start of small call to action section 
+		================================================== -->
+		<div class="container-fluid sm-CLA-section">
+			<div class="row slidestart" >
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+					<div class="jumbotron">
+						<H2>We believe in the power of simple, effective design, and believe that power should be wielded by all</H2>
+						<a class="btn btn-primary btn-lg" href="#">DOWNLOAD PDF</a>
+					</div>
+				</div>
+			</div>  
+		</div>    
+		<!-- end of small call to action section 
+		================================================== -->
+		
+		<!-- start of Projects section
+		================================================== -->
+		<div class="container-fluid projects-container" >
+			<div class="row title-bar">
+				<h2>Our Featured Projects</h2>
+				<h3>
+					We do your projects on schedule
+				</h3>
+				<p>Voluptas sit, aspernatur sequi nesciunt, neque porro quisquam consequnte magni dolores eos, qui ratione voluptatem sequi nesciunt</p>
+			</div>
+			<div class="row slidestart">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="1st Product Thumbnail" />
+						<h3>Project 1</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="2nd Product Thumbnail" />
+						<h3>Project 2</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="3rd Product Thumbnail" />
+						<h3>Project 3</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="4th Product Thumbnail" />
+						<h3>Project 4</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="5th Product Thumbnail" />
+						<h3>Project 5</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="6th Product Thumbnail" />
+						<h3>Project 6</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="7th Product Thumbnail" />
+						<h3>Project 7</h3>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+						<img class="img-responsive img-rounded" src="assets/images/Product-250x250.png" alt="8th Product Thumbnail" />
+						<h3>Project 8</h3>
+				</div>
+			</div>  
+		</div>    
+		<!-- end of Projects section
+		================================================== -->
+		
+		<!-- start of Summaries section
+		================================================== -->
+		<div class="container-fluid summaries-section">	
+			<div class="row slidestart">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="summary-number">
+						70
+					</div>
+					<h4>ONLINE PROJECTS</h4>
+				</div>
+	
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="summary-number">
+						5000
+					</div>
+					<h4>SATISFIED CLIENTS</h4>
+				</div>
+	
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="summary-number">
+						150
+					</div>
+					<h4>LIVE AGENTS</h4>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<div class="summary-number">
+						43170
+					</div>
+					<h4>Support</h4>
+				</div>
+			</div> 
+		</div>  
+		<!-- End of Summaries section
+		================================================== -->
+		
+		<!-- start of pricing section
+		================================================== -->
+			<div class="container pricing-section" id="pricing">
+				<div class="row title-bar slidestart">
+				<h2>Our Pricing</h2>
+				<h3>
+					Select the pricing plan that suits you
+				</h3>
+                <div class="divide"></div>
+				</div>
+				<div class="row">
+                    	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="price1">
+						<div class="table-responsive">
+							<!-- Pricing Table One !-->
+							<table class="table table-condensed table-striped">
+								<thead>
+								  <tr><th>BASIC</th></tr>
+								</thead>
+								<tbody>
+								  <tr class="price"><td>$99<sup>99</sup></td></tr>
+								  <tr><td>UNLIMITED PROJECTS</td></tr>
+								  <tr><td>150 GB OF STORAGE</td></tr>
+								  <tr><td>UNLIMITED</td></tr>
+								  <tr><td>500 GB BANDWIDTH</td></tr>
+								  <tr><td>SECURITY SUITE</td></tr>
+								  <tr><td><a href="#" title="BUY NOW">BUY NOW</a></td></tr>
+								</tbody>
+							 </table>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="price2">
+						<div class="table-responsive">
+							<!-- Pricing Table One !-->
+							<table class="table table-condensed table-striped">
+								<thead>
+								  <tr><th>STANDARD</th></tr>
+								</thead>
+								<tbody>
+								  <tr class="price"><td>$99<sup>99</sup></td></tr>
+								  <tr><td>UNLIMITED PROJECTS</td></tr>
+								  <tr><td>150 GB OF STORAGE</td></tr>
+								  <tr><td>UNLIMITED</td></tr>
+								  <tr><td>500 GB BANDWIDTH</td></tr>
+								  <tr><td>SECURITY SUITE</td></tr>
+								  <tr><td><a href="#" title="BUY NOW">BUY NOW</a></td></tr>
+								</tbody>
+							 </table>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="price3">
+						<!-- Pricing Table Two !-->
+						<div class="table-responsive">
+							<table class="table table-blue ">
+								<thead>
+								  <tr><th>ADVANCED</th></tr>
+								</thead>
+								<tbody>
+								  <tr class="price"><td>$99<sup>99</sup></td></tr>
+								  <tr><td>UNLIMITED PROJECTS</td></tr>
+								  <tr><td>150 GB OF STORAGE</td></tr>
+								  <tr><td>UNLIMITED</td></tr>
+								  <tr><td>500 GB BANDWIDTH</td></tr>
+								  <tr><td>SECURITY SUITE</td></tr>
+								  <tr><td><a href="#" title="BUY NOW">BUY NOW</a></td></tr>
+								</tbody>
+							 </table>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="price4">
+						<!-- Pricing Table Three !-->
+						<div class="table-responsive">
+							<table class="table table-condensed table-striped">
+								<thead>
+								  <tr><th>ULTIMATE</th></tr>
+								</thead>
+								<tbody>
+								  <tr class="price"><td>$99<sup>99</sup></td></tr>
+								  <tr><td>UNLIMITED PROJECTS</td></tr>
+								  <tr><td>150 GB OF STORAGE</td></tr>
+								  <tr><td>UNLIMITED</td></tr>
+								  <tr><td>500 GB BANDWIDTH</td></tr>
+								  <tr><td>SECURITY SUITE</td></tr>
+								  <tr><td><a href="#" title="BUY NOW">BUY NOW</a></td></tr>
+								</tbody>
+							 </table>	
+						</div>
+					</div>
+				</div>
+			</div>   
+		<!-- end of pricing section
+		================================================== -->
+
+		
+		<!-- start of Testimonials section
+		================================================== -->
+		<div class="container-fluid testimonial-section">
+			<div class="row title-bar" >
+				<h2>Our Clients</h2>
+				<h3>
+					Our respective customers
+				</h3>
+			</div>
+			<div class="row slidestart">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+					<!-- Testimonials Block Slider !-->
+					<div id="Testmonials" class="carousel slide" data-ride="carousel">
+					
+					<!-- Testimonial Slider Indicators Styles -->
+					  <ol class="carousel-indicators">
+						<li data-target="#Testmonials" data-slide-to="0" class="active"></li>
+						<li data-target="#Testmonials" data-slide-to="1"></li>
+						<li data-target="#Testmonials" data-slide-to="2"></li>
+						<li data-target="#Testmonials" data-slide-to="3"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner testimonials-inner" role="listbox">
+						<div class="item active">
+						  <div class="testimonial-item" >
+							<img src="assets/images/testimonial-avatar.jpg" alt="Chania" />
+							<h3>AHMED FATHY</h3>
+							<h4>CEO & Founder</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris.</p>
+						  </div>
+						</div>
+
+						<div class="item">
+						  <div class="testimonial-item" >
+							<img src="assets/images/testimonial-avatar.jpg" alt="Chania" />
+							<h3>AHMED FATHY</h3>
+							<h4>CEO & Founder</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris.</p>
+						  </div>
+						</div>
+
+						<div class="item">
+						  <div class="testimonial-item" >
+							<img src="assets/images/testimonial-avatar.jpg" alt="Chania" />
+							<h3>AHMED FATHY</h3>
+							<h4>CEO & Founder</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris.</p>
+						  </div>
+						</div>
+
+						<div class="item">
+						  <div class="testimonial-item" >
+							<img src="assets/images/testimonial-avatar.jpg" alt="Chania" />
+							<h3>AHMED FATHY</h3>
+							<h4>CEO & Founder</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, convallis ut interdum a, consequat sit amet mauris. Vivamus sed tincidunt enim. per inceptos himenaeos.</p>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</div>    
+		<!-- end of Testimonials section
+		================================================== -->
+		
+				
+		<!-- start of Call To Action 
+		================================================== -->
+		<div class="container-fluid CLA-section">
+			<div class="row slidestart" >
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+					<div class="jumbotron" style="background:none;text-align: center;min-height: 600px;vertical-align: middle; padding-top: 200px;">
+						<h2>Easy adding Call To Action</h2>
+						<p>Contact Us now !</p>
+						<a class="btn btn-primary btn-lg" href="#">Contact Us</a>
+						<a class="btn btn-default btn-lg" href="#">BUY NOW</a>
+					</div>
+				</div>
+			</div>  
+		</div>    
+		<!-- end of Call To Action
+		================================================== -->
+		
+		<!-- start of footer section
+		================================================== -->
+		<div class="container-fluid footer-container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<p>
+					<img class="img-responsive" src="assets/images/logo.png" alt="Togaria Corporate Landing Page" />
+					</p>
+						<img class="img-responsive social-icons" src="assets/images/footer-facebook.png" alt="Join Us on Facebook" />
+						<img class="img-responsive social-icons" src="assets/images/footer-twitter.png" alt="Join Us on Facebook" />
+						<img class="img-responsive social-icons" src="assets/images/footer-insta.png" alt="Join Us on Facebook" />
+						<img class="img-responsive social-icons" src="assets/images/footer-youtube.png" alt="Join Us on Facebook" />
+						<img class="img-responsive social-icons" src="assets/images/footer-pinterest.png" alt="Join Us on Facebook" />
+						<img class="img-responsive social-icons" src="assets/images/footer-rss.png" alt="Join Us on Facebook" />
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" >
+					<h4 class="text-center">CONTACT INFO</h4>
+					<p><span class="glyphicon glyphicon-envelope"></span> info@ownsource.org </p>
+					<p><span class="glyphicon glyphicon-phone-alt"></span> +20239754190 </p>
+					<p><span class="glyphicon glyphicon-phone"></span> +201119927754</p>
+					<p><span class="glyphicon glyphicon-flag"></span> 6 Mahmoud Aref,Giza,Egypt.</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+					<h4 class="text-center">SUBSCRIBE US</h4>
+					<p class="subscribe-txt">
+						Register in our newsletter and get updated offers and news.
+					</p>
+					<form class="form-inline" role="form">
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Email address" />
+						<button type="submit" class="btn btn-primary">REGISTER</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 copyrights" >
+					All Copyrights reserved by <a href="#" title="Togaria">Togaria Corporate</a>.
+				</div>
+			</div>
+		</div>    
+		<!-- end of footer section
+		================================================== -->
+
+        <!--Start Loading Section
+        ================================================== -->
+        <section class="loading-overlay">
+            <div class="load-cube-grid">
+              <div class="load-cube load-cube1"></div>
+              <div class="load-cube load-cube2"></div>
+              <div class="load-cube load-cube3"></div>
+              <div class="load-cube load-cube4"></div>
+              <div class="load-cube load-cube5"></div>
+              <div class="load-cube load-cube6"></div>
+              <div class="load-cube load-cube7"></div>
+              <div class="load-cube load-cube8"></div>
+              <div class="load-cube load-cube9"></div>
+            </div>
+        </section>
+    
+        <!--End Loading Section
+        ================================================== -->
+</body>
+</html>
