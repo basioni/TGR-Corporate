@@ -12,42 +12,8 @@
 		<!-- <script src="assets/js/bootstrap.min.js"></script> !-->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		
-<script>
-            $(document).ready(function(){
-                $(window).scroll(function() {
-                var winTop = $(window).scrollTop();
-                    $(".slidestart").each(function(){
-                        var pos = $(this).offset().top;
-                        if (pos < winTop + 600) {
-                            $(this).addClass("slide");
-                        }
-                    });
+		<script src="assets/js/scripts.js"></script>
 
-                    if (winTop > 110) {
-                        $(".navbar-default").css("background-color","rgba(0,0,0,0.5)");
-                //        $(".welcome-flat  .navbar-brand img").css("height","50%");
-                //        $(".welcome-flat  .navbar-brand img").css("width","50%");
-                        $(".navbar").css("height","80px");
-                    } else{
-                        $(".navbar-default").css("background-color","transparent");
-                        $(".navbar").css("height","120px");
-                //        $(".welcome-flat  .navbar-brand img").css("height","100%");
-                //        $(".welcome-flat  .navbar-brand img").css("width","100%");
-                //        
-                    }
-                });
-            });
-            $(window).load(function(){
-                 // Loading Elements
-                $(".loading-overlay .load-cube-grid").fadeOut(2000,function(){
-                    // Show scroll  
-                    $("body").css("overflow","auto");
-                    $(this).parent().fadeOut(1000,function(){ 
-                        $(this).remove();
-                    });
-                }); 
-            }); 
         </script>
 
 	</head>
