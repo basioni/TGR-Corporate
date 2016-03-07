@@ -8,25 +8,27 @@ body{
 min-width: 250px;
 font-family: Tahoma, Geneva, sans-serif;
 overflow: hidden;
+font-weight: 200;
+font-size: 20px;
+
 }
+
 h1,h2,a{
 font-family: 'Oswald', san-serif;
 }
-
 h3,h4,h5,h6{
 font-family: 'Oswald', san-serif;
 }
-
 .title-bar{
 margin-bottom: 10px;
 text-align: center;
 }
 .title-bar h2{
-    line-height: 10px;
-    font-size: 25px;
+line-height: 10px;
+font-size: 25px;
 }
 .title-bar h3{
-    font-weight: bolder;
+font-weight: bolder;
 }
 .btn-primary {
 color: #fff;
@@ -34,11 +36,11 @@ background: #0cb4ce;
 }
 
 .col-centered{
-    float: none;
-    margin: 0 auto;
+float: none;
+margin: 0 auto;
 }
 
-.welcome-flat{
+.welcome-flat,.fixed-menu{
 background:url('../images/togareya-corporate-background.jpg') ;
 background-size: cover;
 min-height: 500px;
@@ -57,77 +59,82 @@ font-weight: bolder;
 .carousel-inner p{
 font-size: 18px;
 }
+/*
+width: 300px;
+margin: auto;
+*/
 
- .divide{
-    height: 2px;
-    width: 200px;
-    background: #0cb4ce;
-    margin: 5px auto;
-    margin-bottom: 30px;
+
+.divide{
+height: 2px;
+width: 200px;
+background: #0cb4ce;
+margin: 5px auto;
+margin-bottom: 30px;
 }
 
 /* NavBar CSS Attributes
 ==================================================*/ 
 
-.welcome-flat .navbar {
+.fixed-menu .navbar {
 transition: all .5s ease-out; 
 /*max-height: 120px;*/
+font-size:16px;
 height: 120px;
 width: auto;
 }
 
-.welcome-flat .navbar-default {
+.fixed-menu .navbar-default {
 background-color: transparent;
 background-size: cover;
 border: none;
 }
-.welcome-flat .navbar-default .navbar-nav a {
+.fixed-menu .navbar-default .navbar-nav a {
 color: white;
 padding: 10px 8px;
 }
 
-.welcome-flat .navbar-default .navbar-nav a:hover {
-color: #EEC856;
+.fixed-menu .navbar-default .navbar-nav a:hover {
+color: darkcyan;
 }
 
-.welcome-flat .navbar-default .navbar-nav .active a {
+.fixed-menu .navbar-default .navbar-nav .active a {
 font-weight: 700;
 color: #0cb4ce;
 background: transparent;
-border-bottom: 4px solid #0cb4ce;
 text-shadow: none;
 }
 
-.welcome-flat .navbar-default .navbar-nav .active a:hover {
-color: #EEC856;
+.fixed-menu .navbar-default .navbar-nav .active a:hover {
+color: darkcyan;
 background: transparent;
 text-shadow: none;
 }
-.welcome-flat .navbar .navbar-header .navbar-toggle {
+.fixed-menu .navbar .navbar-header .navbar-toggle {
 margin-top: 30px;
 
 }
 
-.welcome-flat .navbar .nav > li  {
+.fixed-menu .navbar .nav > li  {
 margin-top: 30px;
 font-size: 18px;
 }
-.welcome-flat .navbar .nav > li:last-child{
+.fixed-menu .navbar .nav > li:last-child{
 margin-right: 50px;
 
 } 
-.welcome-flat .navbar .nav > li > a{
+.fixed-menu .navbar .nav > li > a{
 line-height: 7px;
 
 }
-.welcome-flat .navbar-header, 
-.welcome-flat .navbar-brand,
-.welcome-flat .navbar-brand img {
-    height: 100%;
+.fixed-menu .navbar-header, 
+.fixed-menu .navbar-brand,
+.fixed-menu .navbar-brand img {
+height: 100%;
 /*    width:auto;*/
 }
 
-.welcome-flat #mySlider{
+.fixed-menu #mySlider{
 padding-top: 200px;
 color: #FFF;
 }
@@ -180,9 +187,9 @@ text-align: center;
 .lg-icon-item{
 height: 150px;
 width: 150px;
-background: #0cb4ce;
 text-align: center;
 font-size: 3.0em;
+background:#000;
 color:#fff;
 margin: auto;
 padding: 45px;
@@ -197,7 +204,7 @@ height: 160px;
 width: 160px;
 text-align: center;
 font-size: 3.1em;
-background:#337ab7;
+background: #0cb4ce;
 color:#fff;
 margin: auto;
 padding: 50px;
@@ -240,18 +247,22 @@ height: 100%;
 /*** Services Block 
 ==================================================*/ 
 .services-container{
-margin-top: 30px;
-min-height:680px;
+padding-top: 30px;
+padding-bottom: 30px;
+min-height:700px;
 text-align: center;
 }
-
+.services-container{
+    margin-bottom: 10px;
+}
 .services-icon span{
 cursor: pointer;
 font-size: 3.5em;
 padding: 10px;
+color: #0cb4ce;
 }
 .services-icon span:hover{
-color: #0cb4ce;
+color: darkcyan;
 }
 
 /*** Small Call-To-Action section styles 
@@ -308,21 +319,20 @@ color: #fff;
 
 .summary-number{
 font-size: 4.0em;
-    margin-top: 20px;
+margin-top: 20px;
 
 }
 
 /*** Pricing Section 
 ==================================================*/ 
 #pricing{
-
 padding: 50px;
 text-transform: uppercase;
 }
 
 .pricing-section .table{
-    border: 1px solid #DDD;
-   
+border: 1px solid #DDD;
+
 }
 .pricing-section .table> tbody > tr > td{
 width: 90%;
@@ -331,8 +341,8 @@ font-size: 18px;
 
 }
 #price1, #price2, #price3, #price4 {
-  padding:0 5px;
- margin-bottom: 50px;
+padding:0 5px;
+margin-bottom: 50px;
 }
 
 /*
@@ -341,9 +351,8 @@ background: #0cb4ce;
 color: #fff;
 }*/
 .pricing-section .table-blue {
-background: #0cb4ce;
-color: #fff;
-
+    background: #0cb4ce;
+    color: #fff;
 }
 /*
 .pricing-section .table-blue> tbody > tr > td:hover{
@@ -351,20 +360,20 @@ background: #337ab7;
 }
 */
 .pricing-section .table tr, .pricing-section .table th{
-height: 70px;
-text-align: center;
-vertical-align: middle;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
 }
 .pricing-section .table th{
-font-size: 18px;
-cursor: pointer;
+    font-size: 18px;
+    cursor: pointer;
 }
 .pricing-section .table .price td{
-font-family: 'Oswald', san-serif;
-height: 130px;
-font-size: 56px;
-text-align: center;
-font-weight: bold;
+    font-family: 'Oswald', san-serif;
+    height: 130px;
+    font-size: 56px;
+    text-align: center;
+    font-weight: bold;
 
 }
 .pricing-section .table .price sup{
@@ -373,33 +382,32 @@ font-weight: bold;
     font-weight: 300;
 }
 .pricing-section  .table td{
-vertical-align: middle;
+    vertical-align: middle;
 }
 
 .pricing-section .table a{
-
-border: 2px solid;
-border-radius: 10px;
-padding: 15px;
-margin: auto; 
-text-decoration: none;
-background-color: #FFF;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto; 
+    text-decoration: none;
+    background-color: #FFF;
 }
 
 .pricing-section .table a:hover{
- font-weight: bolder;
+    font-weight: bolder;
 }
 
 
 
 /**** Start of testimonials styles 
 ==================================================*/ 
-
 .testimonial-section{
 background:#f2f2f2;
-background-size: cover;    
+background-size: cover;
 width: 100%;
-padding: 60px;
+padding-top: 60px;
+padding-bottom: 60px;
 text-align: center;
 min-height: 400px;
 }
@@ -409,7 +417,7 @@ color: #0cb4ce;
 }
 
 .testimonial-section .carousel-indicators li{
-    border:2px solid #337ab7;
+border:2px solid #337ab7;
 }
 .testimonial-section .carousel-indicators .active{
 background-color: #337ab7;
@@ -434,93 +442,101 @@ width: 200px;
 height: 200px;
 }
 
-
+/**** Call To Action Section CSS atributes ***/
+.CLA-section{
+    min-height: 600px;
+    background:url('../images/call-to-action-background.jpg') ; /* Replace your Background Image Here */
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+    }
 
 
 /**** Call To Action Section CSS atributes ***/
 .CLA-section{
-min-height: 600px;
-background:url('../images/call-to-action-background.jpg') ; /* Replace your Background Image Here */
-background-size: cover;
-color: #fff;
-padding: 50px;
-}
+    min-height: 600px;
+    background:url('../images/call-to-action-background.jpg') ; /* Replace your Background Image Here */
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+    }
 
 /**** Start of Contact Us styles 
 ==================================================*/
 .contact-us
 {
-    
-/*
-    background: url(../images/contacts.jpg)fixed no-repeat center center ;
-    background-size: cover;
-*/
-
     min-height: 300px;
     padding-top: 80px;
     padding-bottom: 80px;
     color: #000;
 }
-
 .contact-us  .form-control{
-    /*background-color: rgba(0,0,0,0.5);*/
     background-color: rgba(0,0,0,0.1);
     border-radius: 0;
 }
 .contact-us  textarea.form-control{height: 108px;}
+.contact-us input[type="submit"]{
+    width: 150px;
+    height: 50px;   
+}
 
+#mc_embed_signup{
+    background:#fff;
+    clear:left; 
+    font:20px Helvetica,Arial,sans-serif;
+}
+#mc_embed_signup .indicates-required {font-size: 15px;}
 
-/**** End of Contact Us styles 
+/*** Footer Section Styles 
 ==================================================*/
-/*** Footer Section Styles *******/
 .footer-container{
-background:#333333;
-color: #fff;
-min-height:260px;
-padding: 40px 0px 0px 0px;
+    background:#333333;
+    color: #fff;
+    min-height:260px;
+    padding: 40px 0px 0px 0px;
 }
 
 .footer-container .social-icons{
-display: inline;
-margin-top: 5px;
+    display: inline;
+    margin-top: 5px;
 }
 
 .footer-container .form-inline{
-min-height: 50px;
-margin-top: 10px;
-margin-bottom: 20px;
-width: 100%;
-font-size: 17px;
-text-align: center;
+    min-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
 }
 .footer-container .form-group {
-min-height: 50px;
-margin: 10px 20px 10px 20px;
-width: 90%;
-font-size: 17px;
-text-align: center;
+    min-height: 50px;
+    margin: 10px 20px 10px 20px;
+    width: 90%;
+    font-size: 17px;
+    text-align: center;
 }
 
 .footer-container .form-group .form-control{
-width: 70%;
+    width: 70%;
 }
 .footer-container .form-group input , .form-inline .btn{
-min-height: 50px;
-margin-top: 10px;
-font-size: 17px;
+    min-height: 50px;
+    margin-top: 10px;
+    font-size: 17px;
 }
 
 .footer-container p{
-font-family: 'Montserrat', serif;
-font-size: 14px;
-margin: 0px;
+    font-family: 'Oswald', serif;
+    font-size:  14px;
+    margin: 0px;
 }
 
 .footer-container .subscribe-txt{
-font-family: 'Montserrat', serif;
-font-size: 14px;
-padding: 0px 10px 0px 10px;
-text-align: center;
+    font-family: 'Oswald', serif;
+    font-size:  14px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
 }
 
 
@@ -537,39 +553,43 @@ text-align: center;
 }
 
 
-/*  Animations And Effects*/ 
+/****  Animations And Effects
+==================================================*/
+
 .slidestart {visibility:hidden;}
 
 .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;	
-      animation-duration: 1s;	
-      -webkit-animation-duration: 1s;
-      visibility: visible;			
+animation-name: slide;
+-webkit-animation-name: slide;	
+animation-duration: 1s;	
+-webkit-animation-duration: 1s;
+visibility: visible;			
 }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(80%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }	
-  }
+@keyframes slide {
+0% {
+opacity: 0;
+-webkit-transform: translateY(80%);
+} 
+100% {
+opacity: 1;
+-webkit-transform: translateY(0%);
+}	
+}
 
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(80%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
+@-webkit-keyframes slide {
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(80%);
+} 
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+}
+}
 
-/* Start Loading Section */
+/**** Start Loading Section 
+==================================================*/
+
 .loading-overlay{
     position: fixed;
     width: 100%;
@@ -581,82 +601,105 @@ text-align: center;
 }
 
 .load-cube-grid {
-  width: 40px;
-  height: 40px;
-  margin: 300px auto;
+    width: 40px;
+    height: 40px;
+    margin: 300px auto;
 }
 
 .load-cube-grid .load-cube {
-  width: 33%;
-  height: 33%;
-  background-color: #FFF;
-  float: left;
-  -webkit-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  -o-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  -moz-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+    width: 33%;
+    height: 33%;
+    background-color: #FFF;
+    float: left;
+    -webkit-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    -o-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    -moz-animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: load-cubeGridScaleDelay 1.3s infinite ease-in-out; 
 }
 .load-cube-grid .load-cube1 {
-  -webkit-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s; 
+    }
 .load-cube-grid .load-cube2 {
-  -webkit-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; 
+}
 .load-cube-grid .load-cube3 {
-  -webkit-animation-delay: 0.4s;
-  -o-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
+    -webkit-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s; 
+}
 .load-cube-grid .load-cube4 {
-  -webkit-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+    -webkit-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s; 
+}
 .load-cube-grid .load-cube5 {
-  -webkit-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s; 
+}
 .load-cube-grid .load-cube6 {
-  -webkit-animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+    -webkit-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; 
+}
 .load-cube-grid .load-cube7 {
-  -webkit-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-          animation-delay: 0s; }
+    -webkit-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s; 
+}
 .load-cube-grid .load-cube8 {
-  -webkit-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-          animation-delay: 0.1s; }
+    -webkit-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s; 
+}
 .load-cube-grid .load-cube9 {
-  -webkit-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s; 
+}
 
 @keyframes load-cubeGridScaleDelay {
-  0%, 70%, 100% {
+0%, 70%, 100% {
     -webkit-transform: scale3D(1, 1, 1);
     -moz-transform: scale3D(1, 1, 1); 
     -o-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  } 35% {
+    transform: scale3D(1, 1, 1);}
+35% {
     -webkit-transform: scale3D(0, 0, 1);
     -moz-transform: scale3D(0, 0, 1); 
     -o-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
-  }
+    transform: scale3D(0, 0, 1); }
 }
-
-
 
 /* End Loading Section */
 
+/*	Responsive
+	==================================================*/ 
+@media (max-width: 767px) {
+    .carousel-inner p{
+        font-size: 15px;
+    }
+    .sm-CLA-section .slidestart h2{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+    
+    .carousel-indicators {
+        bottom: -25px;
+    }
+    
+}
