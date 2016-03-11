@@ -7,7 +7,6 @@
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!--        <link rel="stylesheet" href="assets/css/style.css">-->
         <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   
@@ -44,6 +43,16 @@
                 scrollBtn.click(function(){
               $("html,body").animate({scrollTop:0},600);
               });
+                
+                 $(".slidestart img").click(function(){
+                    var src=$(this).attr("src");
+                    $(".show").css("display","block!important");
+                    $(".img-show img").attr("src",src);
+                });
+                $(".fa-times,.overlay-layer").click(function(){
+                    $(".show").css("display","none !important");
+                });
+             
             });
             $(window).load(function(){
                  // Loading Elements
@@ -60,88 +69,66 @@
 	</head>
 
 
-	<body>
-        <!-- Start Welcome flat container
+	<body data-spy="scroll" data-target=".navbar" data-offset="95">
+      
+		<!-- Start Fixed-Menu Block
 		================================================== -->
 		
-		<!-- Flat Container Main Block-->
-		<section class="container-fluid welcome-flat">
-			<div class="row" >
-				<div class="col-sm-6 col-md-8 col-lg-7">
-					<!-- Main -->
-					<div  class="main-intro" >
-						<!-- Replace Your website Link with # -->
-						<a href="#" title="Togaria Corporate">
-						<!-- Replace Your Logo Image-->
-						<img class="img-responsive" src="assets/images/logo.png" alt="Togareya Corporate" />
-						</a>
-						
-						<h1>Togareya Corporate</h1>
-						
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-							
-							<!-- Welcome Flat Block slides -->
-							<div class="carousel-inner" role="listbox">
-							
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item active">
-									<h2>Ready Quotes for using!</h2>
-									<p> Sample welcome text!</p>
-								</div>
+		<!-- Flat Container -->
+		<header class="fixed-menu container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="#">
+                        <img id="brand-image" src="assets/images/logo.png" alt="Togareya Corporate" />
+                    </a>
+                  </div><!-- navbar-header -->
+                  <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="#mySlider">Home</a></li>
+                      <li><a href="#service">Services</a></li>
+                      <li><a href="#projects">Features</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="#testinomial">Testimonials</a></li>
+                      <li><a href="#contact">Contact Us</a></li> 
+                    </ul>        
+                  </div><!-- collapse navbar-collapse -->
+              
+            </nav>
+        	<div id="mySlider" class="carousel slide text-center"  data-ride="carousel" >			
+                <!-- Welcome Flat Block slides -->
+                <div class="carousel-inner" role="listbox">
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Togareya is your best choice</h2>
-									<p> Sample welcome text!</p>
-								</div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item active">
+                        <h2>Ready Quotes for using!</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Business Landing Page</h2>
-									<p> Sample welcome text!</p>
-								</div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item">
+                        <h2>Togareya is your best choice</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-								<!-- Welcome Flat Block slide Item -->
-								<div class="item">
-									<h2>Business Landing Page</h2>
-									<p> Sample welcome text!</p>
-								</div>
-						  </div>
+                    <!-- Welcome Flat Block slide Item -->
+                    <div class="item">
+                        <h2>Business Landing Page</h2>
+                        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque,     convallis ut interdum a, consequat sit amet mauris.</p>
+                    </div>
 
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-5 col-md-3 col-lg-4">
-				
-					<!-- Flat Main Form Section-->
-					<div class="flat-form">
-						<h3>CONTACT US NOW!</h3>
-						
-						<!-- Flat Main Form elements-->
-						<form role="form">
-							<div class="form-group" >
-								<input type="text" class="form-control" id="usr" placeholder="First Name" />
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="usrlast" placeholder="Last Name" />
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Email Address" />
-							</div>
-							<div class="form-group">
-								<input type="tel" class="form-control" id="phone" placeholder="Phone" />
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-block" value="SUBMIT" />
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end of welcome flat container
+              </div>
+            </div>
+		</header>
+		<!-- end of Fixed-Menu Block
 		================================================== -->
-		
+
 		<!-- start of large icons Block
 		================================================== -->
 		<section class="container large-icons " id="large-icon">	
@@ -185,7 +172,7 @@
 
 		<!-- start of Features Block
 		================================================== -->
-		<section class="container-fluid features-section" id="features">
+		<section class="container-fluid features-section" >
 			<div class="row">
 				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8" >
 				
@@ -374,6 +361,14 @@
 				</div>
 			</div>  
 		</section>    
+        <div class="show">
+          <div class="overlay-layer"></div>
+          <div class="img-show">
+            <i class="fa fa-times"></i>
+            <img src="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          </div>
+        </div>
 		<!-- end of Projects section
 		================================================== -->
 		
